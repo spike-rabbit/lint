@@ -1,0 +1,27 @@
+{
+  "name": "@siemens/prettier-config",
+  "version": "1.2.2",
+  "description": "Configuration for Prettier.",
+  "files": [
+    "*.json",
+    "*.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:siemens/lint.git"
+  },
+  "author": {
+    "name": "Siemens",
+    "email": "opensource@siemens.com"
+  },
+  "homepage": "https://github.com/siemens/lint",
+  "bugs": "https://github.com/siemens/lint/issues",
+  "keywords": [
+    "siemens",
+    "lint"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  }
+}

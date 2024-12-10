@@ -1,0 +1,14 @@
+extends:
+  - stylelint-config-sass-guidelines
+rules:
+  color-named: never
+  color-no-hex: true
+  declaration-no-important: true
+  max-nesting-depth: null
+  selector-no-qualifying-type: null
+  selector-max-compound-selectors: null
+  scss/at-extend-no-missing-placeholder: null
+  scss/dollar-variable-colon-space-after: null
+  selector-pseudo-element-no-unknown:
+    - true
+    - ignorePseudoElements: [ng-deep]

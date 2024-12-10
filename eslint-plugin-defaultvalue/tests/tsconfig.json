@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "moduleResolution": "Node16"
+  },
+  "include": ["file.ts"]
+}

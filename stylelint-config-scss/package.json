@@ -1,0 +1,29 @@
+{
+  "name": "@siemens/stylelint-config-scss",
+  "version": "1.2.2",
+  "description": "Configuration for Stylelint using SCSS (Sass).",
+  "files": [
+    "*.yml",
+    "*.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:siemens/lint.git"
+  },
+  "author": {
+    "name": "Siemens",
+    "email": "opensource@siemens.com"
+  },
+  "homepage": "https://github.com/siemens/lint",
+  "bugs": "https://github.com/siemens/lint/issues",
+  "keywords": [
+    "siemens",
+    "lint"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "stylelint": "^16.8.1",
+    "stylelint-config-sass-guidelines": "^11.1.0",
+    "stylelint-scss": "^6.5.1"
+  }
+}

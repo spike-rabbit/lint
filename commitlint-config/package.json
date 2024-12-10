@@ -1,0 +1,29 @@
+{
+  "name": "@siemens/commitlint-config",
+  "version": "1.2.2",
+  "description": "Configuration for commitlint.",
+  "files": [
+    "*.js",
+    "*.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:siemens/lint.git"
+  },
+  "author": {
+    "name": "Siemens",
+    "email": "opensource@siemens.com"
+  },
+  "homepage": "https://github.com/siemens/lint",
+  "bugs": "https://github.com/siemens/lint/issues",
+  "keywords": [
+    "siemens",
+    "lint"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "peerDependencies": {
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.2.2"
+  }
+}

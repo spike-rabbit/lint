@@ -1,0 +1,16 @@
+# compiled output
+/dist
+
+# dependencies
+node_modules
+
+# misc
+yarn-debug.log
+yarn-error.log
+
+# JetBrains IDEs
+.idea
+
+# System Files
+.DS_Store
+Thumbs.db
