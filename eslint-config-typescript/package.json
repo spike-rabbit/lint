@@ -21,6 +21,9 @@
     "siemens",
     "lint"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@eslint/js": "^9.9.1",

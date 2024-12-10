@@ -11,12 +11,16 @@
     "name": "Siemens",
     "email": "opensource@siemens.com"
   },
+  "private": true,
   "type": "module",
   "devDependencies": {
     "@commitlint/cli": "19.4.0",
     "@commitlint/config-conventional": "19.2.2",
     "@microsoft/tsdoc": "^0.15.0",
     "@microsoft/tsdoc-config": "^0.17.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@types/node": "^22.4.1",
     "@typescript-eslint/rule-tester": "8.6.0",
     "@typescript-eslint/utils": "8.6.0",
@@ -32,6 +36,7 @@
     "husky": "^9.1.5",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.0",
     "stylelint": "16.8.1",
     "stylelint-config-sass-guidelines": "11.1.0",
     "stylelint-scss": "6.5.1",
@@ -53,6 +58,7 @@
     "lint:fix": "eslint --fix",
     "lint:commit": "commitlint --from=origin/main",
     "plugin:test": "tsx --import ./eslint-plugin-defaultvalue/tests/setup-node.js --test ./eslint-plugin-defaultvalue/tests/*.test.ts",
+    "release": "semantic-release",
     "prepare": "husky; exit 0"
   },
   "commitlint": {

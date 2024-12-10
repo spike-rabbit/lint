@@ -20,6 +20,9 @@
     "siemens",
     "lint"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "type": "module",
   "peerDependencies": {
