@@ -1,0 +1,55 @@
+{
+  "branches": [
+    {
+      "name": "maintenance/+([0-9])?(.{+([0-9]),x}).x",
+      "channel": "${name.replace(/^maintenance\\//g, \"\")}"
+    },
+    "main",
+    {
+      "name": "next",
+      "channel": "next",
+      "prerelease": true
+    }
+  ],
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/commitlint-config"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/eslint-config-angular"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/eslint-config-typescript"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/eslint-plugin-defaultvalue"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/prettier-config"
+      }
+    ],
+    [
+      "@semantic-release/npm",
+      {
+        "pkgRoot": "dist/stylelint-config-scss"
+      }
+    ],
+    "@semantic-release/github"
+  ]
+}
