@@ -309,6 +309,14 @@ All details are listed in our contribution guide.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Release
+
+This project uses semantic release.
+
+- to create a new release push changes to the `main` branch
+- to create a pre-release push changes to the `next` branch
+- to create a maintenance release push changes to a branch following this pattern: `release/N.N.x` / `release/N.x.x` / `release/N.x` / `release/N` branch where `N` is any existing version
+
 ## License
 
 Code and documentation Copyright (c) Siemens 2018 - 2024.
