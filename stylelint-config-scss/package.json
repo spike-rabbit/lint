@@ -1,6 +1,6 @@
 {
   "name": "@siemens/stylelint-config-scss",
-  "version": "1.2.2",
+  "version": "0.0.0-development",
   "description": "Configuration for Stylelint using SCSS (Sass).",
   "files": [
     "*.yml",

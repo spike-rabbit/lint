@@ -1,6 +1,6 @@
 {
   "name": "@siemens/eslint-config-angular",
-  "version": "1.2.2",
+  "version": "0.0.0-development",
   "description": "Configuration for linting Angular TypeScript and templates using Angular ESLint.",
   "files": [
     "*.mjs",

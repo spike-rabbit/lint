@@ -1,6 +1,6 @@
 {
   "name": "@siemens/lint",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "description": "Collection of linter configuration files and plugins used across Siemens.",
   "license": "MIT",
   "repository": {

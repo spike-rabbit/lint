@@ -1,6 +1,6 @@
 {
   "name": "@siemens/eslint-plugin-defaultvalue",
-  "version": "1.2.2",
+  "version": "0.0.0-development",
   "main": "lib/index.js",
   "type": "module",
   "description": "Automatically enrich TSDoc comments with default values or check if they are all correct.",

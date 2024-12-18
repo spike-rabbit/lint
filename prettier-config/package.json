@@ -1,6 +1,6 @@
 {
   "name": "@siemens/prettier-config",
-  "version": "1.2.2",
+  "version": "0.0.0-development",
   "description": "Configuration for Prettier.",
   "files": [
     "*.json",
