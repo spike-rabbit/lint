@@ -1,6 +1,12 @@
 {
   "branches": ["+([0-9])?(.{+([0-9]),x}).x", "main", "next"],
   "plugins": [
+    [
+      "@semantic-release/exec",
+      {
+        "prepare": "npm version ${nextRelease.version} --git-tag-version false --workspaces true"
+      }
+    ],
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     [
@@ -37,12 +43,6 @@
       "@semantic-release/npm",
       {
         "pkgRoot": "dist/stylelint-config-scss"
-      }
-    ],
-    [
-      "@semantic-release/exec",
-      {
-        "prepare": "npm version ${nextRelease.version} --git-tag-version false --workspaces true"
       }
     ],
     "@semantic-release/github"
