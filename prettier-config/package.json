@@ -1,5 +1,5 @@
 {
-  "name": "@siemens/prettier-config",
+  "name": "@spike-rabbit/prettier-config",
   "version": "0.0.0-development",
   "description": "Configuration for Prettier.",
   "files": [
@@ -8,14 +8,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:siemens/lint.git"
+    "url": "git@github.com:spike-rabbit/lint.git"
   },
   "author": {
     "name": "Siemens",
     "email": "opensource@siemens.com"
   },
-  "homepage": "https://github.com/siemens/lint",
-  "bugs": "https://github.com/siemens/lint/issues",
+  "homepage": "https://github.com/spike-rabbit/lint",
+  "bugs": "https://github.com/spike-rabbit/lint/issues",
   "keywords": [
     "siemens",
     "lint"

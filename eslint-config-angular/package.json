@@ -1,5 +1,5 @@
 {
-  "name": "@siemens/eslint-config-angular",
+  "name": "@spike-rabbit/eslint-config-angular",
   "version": "0.0.0-development",
   "description": "Configuration for linting Angular TypeScript and templates using Angular ESLint.",
   "files": [
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:siemens/lint.git"
+    "url": "git@github.com:spike-rabbit/lint.git"
   },
   "author": {
     "name": "Siemens",
     "email": "opensource@siemens.com"
   },
-  "homepage": "https://github.com/siemens/lint",
-  "bugs": "https://github.com/siemens/lint/issues",
+  "homepage": "https://github.com/spike-rabbit/lint",
+  "bugs": "https://github.com/spike-rabbit/lint/issues",
   "keywords": [
     "siemens",
     "lint"

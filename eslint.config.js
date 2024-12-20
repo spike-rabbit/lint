@@ -6,7 +6,7 @@ import eslintJs from '@eslint/js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import typescriptEslint from 'typescript-eslint';
-import angularTypescriptConfig from '@siemens/eslint-config-angular';
+import angularTypescriptConfig from '@spike-rabbit/eslint-config-angular';
 import prettier from 'eslint-config-prettier';
 import tsdocPlugin from 'eslint-plugin-tsdoc';
 import eslintPluginHeaders from 'eslint-plugin-headers';
