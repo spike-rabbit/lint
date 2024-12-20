@@ -4,7 +4,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepare": "npm version ${nextRelease.version} --git-tag-version false --workspaces true"
+        "generateNotes": "npm version ${nextRelease.version} --git-tag-version false --workspaces true"
       }
     ],
     "@semantic-release/commit-analyzer",
