@@ -39,6 +39,12 @@
         "pkgRoot": "dist/stylelint-config-scss"
       }
     ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepare": "npm version ${nextRelease.version} --git-tag-version false --workspaces true"
+      }
+    ],
     "@semantic-release/github"
   ]
 }
