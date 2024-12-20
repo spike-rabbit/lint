@@ -2,6 +2,10 @@ name: Build
 
 on:
   push:
+    branches:
+      - main
+      - release/*
+      - next
   pull_request:
 jobs:
   build-and-test:
@@ -21,24 +25,3 @@ jobs:
       - run: npm run lint:commit
       - run: npm run lint
       - run: npm run plugin:test
-
-  release:
-    if: ${{ github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/') }}
-    runs-on: ubuntu-latest
-    needs: build-and-test
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Use Node.js 22.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22.x
-          cache: 'npm'
-      - run: npm ci
-      - run: npm run build
-      - name: Semantic Release
-        run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
