@@ -10,7 +10,7 @@ import jsdocPlugin from 'eslint-plugin-jsdoc';
 import preferArrowPlugin from 'eslint-plugin-prefer-arrow';
 
 // Keep in sync with eslint-config-typescript (except Angular stuff).
-
+// dummy change
 export const configBase = typescriptEslint.config({
   extends: [
     eslintJs.configs.recommended,
