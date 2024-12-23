@@ -463,12 +463,11 @@ deprecation note and appear in the changelog.
 
 ## Releasing
 
-To create a new release you need to bump the package version in **package.json**,
-update the changelog, commit, tag.
+We use [semantic-release](https://semantic-release.gitbook.io/semantic-release) which automates all release tasks.
 
-We use `semantic-release` which automates all these tasks.
-
-TODO: Add details how to use `semantic-release` etc.
+- to create a new release push changes to the `main` branch
+- to create a pre-release push changes to the `next` branch
+- to create a maintenance release push changes to a branch following this pattern: `maintenance/N.N.x` / `maintenance/N.x.x` / `maintenance/N.x` branch where `N` is any existing version
 
 ## Attribution
 
