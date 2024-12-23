@@ -3,7 +3,7 @@
     "+([0-9])?(.{+([0-9]),x}).x",
     "main",
     {
-      "name": "next",
+      "name": "next/+([0-9])",
       "channel": "next",
       "prerelease": true
     }

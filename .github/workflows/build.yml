@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - release/*
-      - next
+      - next/*
   pull_request:
 jobs:
   build-and-test:
@@ -27,7 +27,7 @@ jobs:
       - run: npm run plugin:test
 
   release:
-    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/next' || startsWith(github.ref, 'refs/heads/release/')
+    if: github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/heads/next/') || startsWith(github.ref, 'refs/heads/release/')
     runs-on: ubuntu-latest
     permissions:
       contents: write # to be able to publish a GitHub release
