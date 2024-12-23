@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - release/*
+      - maintenance/*
       - next
   pull_request:
 jobs:
@@ -28,7 +28,7 @@ jobs:
 
   # pointless
   release:
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/next' || startsWith(github.ref, 'refs/heads/release/')
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/next' || startsWith(github.ref, 'refs/heads/maintenance/')
     runs-on: ubuntu-latest
     permissions:
       contents: write # to be able to publish a GitHub release
