@@ -1,6 +1,6 @@
 {
   "name": "@siemens/eslint-config-typescript",
-  "version": "1.2.2",
+  "version": "0.0.0-development",
   "description": "Configuration for linting TypeScript using typescript-eslint.",
   "files": [
     "*.mjs",
@@ -9,7 +9,7 @@
   "main": "./index.mjs",
   "repository": {
     "type": "git",
-    "url": "git@github.com:siemens/lint.git"
+    "url": "git+ssh://git@github.com/siemens/lint.git"
   },
   "author": {
     "name": "Siemens",
@@ -21,6 +21,9 @@
     "siemens",
     "lint"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@eslint/js": "^9.9.1",
