@@ -59,7 +59,7 @@ export default typescriptEslint.config({
   files: ['**/*.ts'],
   languageOptions: {
     parserOptions: {
-      project: ['tsconfig.json', 'tsconfig.app.json', 'tsconfig.spec.json', 'e2e/tsconfig.json']
+      project: ['tsconfig.json', 'tsconfig.app.json', 'tsconfig.spec.json', 'e2e/tsconfig.json'],
       tsconfigRootDir: __dirname
     }
   }
@@ -80,6 +80,7 @@ import { fileURLToPath } from 'url';
 import typescriptEslint from 'typescript-eslint';
 import angularTypescriptConfig from '@siemens/eslint-config-angular';
 import angularTemplateConfig from '@siemens/eslint-config-angular/template';
+import prettier from 'eslint-config-prettier';
 
 // mimic CommonJS variables
 const __filename = fileURLToPath(import.meta.url);
@@ -90,7 +91,7 @@ export const tsConfig = typescriptEslint.config({
   files: ['**/*.ts'],
   languageOptions: {
     parserOptions: {
-      project: ['tsconfig.json', 'tsconfig.app.json', 'tsconfig.spec.json', 'e2e/tsconfig.json']
+      project: ['tsconfig.json', 'tsconfig.app.json', 'tsconfig.spec.json', 'e2e/tsconfig.json'],
       tsconfigRootDir: __dirname
     }
   },
