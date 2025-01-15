@@ -256,12 +256,7 @@ export default createRule({
     docs: {
       description: 'enforce correct @defaultValue TSDoc annotation'
     },
-    schema: [
-      {
-        type: 'string',
-        enum: ['removeAll', 'default']
-      }
-    ] as const,
+    schema: [] as const,
     fixable: 'code',
     messages: {
       incorrectDefaultValueAnnotation: 'Incorrect @defaultValue TSDoc annotation: {{ message }}',

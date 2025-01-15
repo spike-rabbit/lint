@@ -33,16 +33,3 @@ export default [
   }
 ];
 ```
-
-### Removing not resolved and setter @defaultValue annotations
-
-To automatically remove not resolvable and setter @defaultValue annotations, use the following configuration:
-
-```js
-...,
-rules: {
-  ...,
-  'defaultvalue/tsdoc-defaultValue-annotation': ['error', 'removeAll', 1000]
-}
-...
-```
