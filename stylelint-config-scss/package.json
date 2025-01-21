@@ -25,6 +25,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
+    "postcss-scss": "^4.0.0",
     "stylelint": "^16.8.1",
     "stylelint-scss": "^6.5.1"
   }
