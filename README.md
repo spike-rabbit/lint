@@ -84,13 +84,12 @@ import { fileURLToPath } from 'url';
 import typescriptEslint from 'typescript-eslint';
 import angularTypescriptConfig from '@siemens/eslint-config-angular';
 import angularTemplateConfig from '@siemens/eslint-config-angular/template';
-import prettier from 'eslint-config-prettier';
 
 // mimic CommonJS variables
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export const tsConfig = typescriptEslint.config({
+const tsConfig = typescriptEslint.config({
   extends: [...angularTypescriptConfig],
   files: ['**/*.ts'],
   languageOptions: {
@@ -119,7 +118,7 @@ export const tsConfig = typescriptEslint.config({
   }
 });
 
-export const templateConfig = typescriptEslint.config({
+const templateConfig = typescriptEslint.config({
   extends: [...angularTemplateConfig],
   files: ['**/*.html']
 });
