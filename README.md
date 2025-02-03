@@ -75,8 +75,7 @@ export default typescriptEslint.config({
 
 #### Angular
 
-Include the ESLint preset in your root `eslint.config.js` (not `.mjs`) and make
-sure `"type": "module"` is set in your root `package.json`:
+Include the ESLint preset in your root `eslint.config.mjs`:
 
 ```js
 import path from 'path';
@@ -128,13 +127,11 @@ export default typescriptEslint.config(...tsConfig, ...templateConfig);
 ```
 
 For libraries and other things in the `projects` directory,
-make sure `"type": "module"` is set in the relevant `package.json`
-and create an additional
-`eslint.config.js` for each project that looks like this:
+create an additional `eslint.config.mjs` for each project that looks like this:
 
 ```js
 import typescriptEslint from 'typescript-eslint';
-import { tsConfig, templateConfig } from '../../eslint.config.js';
+import { tsConfig, templateConfig } from '../../eslint.config.mjs';
 
 export default typescriptEslint.config(
   {
@@ -168,7 +165,7 @@ export default typescriptEslint.config(
 );
 ```
 
-The `@angular-eslint/builder` will also not automatically pick up the library
+The `@angular-eslint/builder` will not automatically pick up the library
 config location, manually provide it in `angular.json`:
 
 ```diff
@@ -182,7 +179,7 @@ config location, manually provide it in `angular.json`:
               "src/**/*.ts",
               "src/**/*.html"
             ],
-+           "eslintConfig": "path/to/project/eslint.config.js"
++           "eslintConfig": "path/to/project/eslint.config.mjs"
           }
         },
 ```
